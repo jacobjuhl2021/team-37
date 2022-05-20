@@ -8,30 +8,30 @@ h1{
 
 
 
-.f1{
-    grid-area: i1;
+.k_grid1{
+    grid-area: k1;
     background-color: aliceblue;}
-.f2{
-    grid-area: i2;
+.k_grid2{
+    grid-area: k2;
     background-color: aqua;}
-.f3{
-    grid-area: i3;
+.k_grid3{
+    grid-area: k3;
     background-color: aquamarine;}
-.f4{
-    grid-area: i4;
+.k_grid4{
+    grid-area: k4;
     background-color: beige;
     }
-.f5{
-    grid-area: i5;
+.k_grid5{
+    grid-area: k5;
     background-color: bisque;
     }
-.f6{
-    grid-area: i6;
+.k_grid6{
+    grid-area: k6;
     background-color: chartreuse;
     }
 
-   
-.f7{
+   /*
+.k_grid7{
     grid-area: i7;
     background-color: blue;
     }
@@ -49,10 +49,10 @@ h1{
 .griditems2{
     display: grid;
     grid-template-areas: 
-    'i1     i1      .'
-    '.      i2      i2'
-    'i3     i3      .'
-    '.      i4      i4'
-    'i5     i5      .'
-    '.      i6      i6'
-    'i7     i7      .';}
+    'k1     k1      .'
+    '.      k2      k2'
+    'k3     k3      .'
+    '.      k4      k4'
+    'k5     k5      .'
+    '.      k6      k6'
+    '.     .      .';}
