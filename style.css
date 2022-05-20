@@ -30,22 +30,6 @@ h1{
     background-color: chartreuse;
     }
 
-   /*
-.k_grid7{
-    grid-area: i7;
-    background-color: blue;
-    }
-     /*
-.f8{
-    grid-area: i8;
-    background-color: blueviolet;
-    }
-.f9{
-    grid-area: i9;
-    background-color: brown;
-    }
-    */
-
 .griditems2{
     display: grid;
     grid-template-areas: 
