@@ -3,3 +3,56 @@ h1{
     color: #0220BF;
     opacity: 25%;;
 }
+
+
+
+
+
+.f1{
+    grid-area: i1;
+    background-color: aliceblue;}
+.f2{
+    grid-area: i2;
+    background-color: aqua;}
+.f3{
+    grid-area: i3;
+    background-color: aquamarine;}
+.f4{
+    grid-area: i4;
+    background-color: beige;
+    }
+.f5{
+    grid-area: i5;
+    background-color: bisque;
+    }
+.f6{
+    grid-area: i6;
+    background-color: chartreuse;
+    }
+
+   
+.f7{
+    grid-area: i7;
+    background-color: blue;
+    }
+     /*
+.f8{
+    grid-area: i8;
+    background-color: blueviolet;
+    }
+.f9{
+    grid-area: i9;
+    background-color: brown;
+    }
+    */
+
+.griditems2{
+    display: grid;
+    grid-template-areas: 
+    'i1     i1      .'
+    '.      i2      i2'
+    'i3     i3      .'
+    '.      i4      i4'
+    'i5     i5      .'
+    '.      i6      i6'
+    'i7     i7      .';}
