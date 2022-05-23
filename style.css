@@ -8,10 +8,7 @@
 }
 
 
-/*Nav bar*/
-body{
-    background: linear-gradient(to left, #0220bf 22%, #5cbfcc 100%);
-}
+
 
 /*Nav bar*/
 .n_flex {display: flex;}
