@@ -139,14 +139,21 @@
 .c_griditem_7{grid-area: c7; background-color: blue;}
 .c_griditem_8{grid-area: c8; background-color: blueviolet;}
 .c_griditem_9{grid-area: c9; background-color: brown;}
+
+
 .c_grid_container{
-    object-fit: cover;
+    
     display: grid;
     grid-template-areas: 
     'c1     c2      c3'
     'c1     c4      c5'
     'c6     c7      c5'
     'c8     c7      c9';
+}
+.c_grid_container>img{
+    object-fit: cover;
+    width: 30rem;
+    
 }
 
     
