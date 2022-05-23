@@ -142,22 +142,17 @@
 
 
 .c_grid_container{
-    
     display: grid;
     grid-template-areas: 
     'c1     c2      c3'
     'c1     c4      c5'
     'c6     c7      c5'
     'c8     c7      c9';
-    grid-template-columns: 33% 33% 33%;
-    max-width: 100%;
-}
-.c_grid_container>img{
-    object-fit: scale-down;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
     
+}
+.c_griditem>img{
+  width: 100%;
+  max-height: 100%; 
 }
 
 /*Karriere Side desktop*/
