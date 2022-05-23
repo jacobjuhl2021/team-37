@@ -7,9 +7,6 @@
     background: linear-gradient(to left, #0220bf 22%, #5cbfcc 100%);
 }
 
-
-
-
 /*Nav bar*/
 .n_flex {display: flex;}
 .n_child{
@@ -29,7 +26,7 @@
     align-items: center;
     margin-left: 10%;
     word-wrap: none;
-    width: 100%;
+    width: 110%;
     padding-inline: 5%;
     z-index: 100;
 }
