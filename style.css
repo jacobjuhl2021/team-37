@@ -54,7 +54,7 @@
         flex-direction: column;
         transform: translateX(100%);
         transition: transform 500ms ease-in-out;
-        background-color: black;}
+        }
 
         .mobile-nav-toggle[aria-expanded="true"] {
             background-image: url(billeder/ikon.png);
@@ -96,7 +96,7 @@
             flex-direction: column;
             transform: translateX(100%);
             transition: transform 500ms ease-in-out;
-            background-color: black;}
+            }
 
         .mobile-nav-toggle[aria-expanded="true"] {
                 background-image: url(ikon.png);
