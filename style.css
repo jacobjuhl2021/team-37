@@ -1,3 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background: linear-gradient(to left, #0220bf 22%, #5cbfcc 100%);
+}
+
 
 /*Nav bar*/
 .n_flex {display: flex;}
@@ -110,22 +119,22 @@
             }
 }
 
+
+/*Karriere Side desktop*/
+
 h1{
     font-size: 180px;
     color: #0220BF;
     opacity: 25%;;
 }
 
-
-.gradiant_baggrund{
-    height: 400px;
-    background: linear-gradient(to bottom left, #0220bf 22%, #5cbfcc 100%)
-}
-
 .k_toptekst{
     font-size: 30px;
     padding-left: 10%;
+    
 }
+
+
 
 .button {
     background-color: #6b9299; /* Green */
