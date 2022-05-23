@@ -130,7 +130,24 @@
     height: auto;
 }
 /*Cases grid*/
-
+.c_griditem_1{grid-area: c1; background-color: aliceblue;}
+.c_griditem_2{grid-area: c2; background-color: aqua;}
+.c_griditem_3{grid-area: c3; background-color: aquamarine;}
+.c_griditem_4{grid-area: c4; background-color: beige;}
+.c_griditem_5{grid-area: c5; background-color: bisque;}
+.c_griditem_6{grid-area: c6; background-color: chartreuse;}
+.c_griditem_7{grid-area: c7; background-color: blue;}
+.c_griditem_8{grid-area: c8; background-color: blueviolet;}
+.c_griditem_9{grid-area: c9; background-color: brown;}
+.c_grid_container{
+    object-fit: cover;
+    display: grid;
+    grid-template-areas: 
+    'c1     c2      c3'
+    'c1     c4      c5'
+    'c6     c7      c5'
+    'c8     c7      c9';
+}
 
     
 
