@@ -60,7 +60,7 @@ body{
         background-color: black;}
 
         .mobile-nav-toggle[aria-expanded="true"] {
-            background-image: url(ikon.png);
+            background-image: url(billeder/ikon.png);
         }
         .primary-navigation[data-visible="true"] {
             transform: translateX(0);
@@ -73,7 +73,7 @@ body{
             right: 1rem;
             top: 2rem;
             background: transparent;
-            background-image: url(ikon.png);
+            background-image: url(billeder/ikon.png);
             background-repeat: no-repeat;
             background-position: center;
             width: 1.5rem;
