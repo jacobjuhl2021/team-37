@@ -1,3 +1,115 @@
+
+/*Nav bar*/
+.n_flex {display: flex;}
+.n_child{
+    font-size: 120%;}
+
+.n_logo {
+   width: 100%;
+   height: auto;}
+
+.primary-navigation {
+    gap: 4vw;
+    list-style: none;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10%;
+    word-wrap: none;
+    width: 100%;
+    padding-inline: 5%;
+    z-index: 100;
+}
+
+.primary-navigation a {
+    text-decoration: none;}
+
+.mobile-nav-toggle {
+    display: none;}
+
+@media (max-width: 500px) {
+    .primary-navigation {
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 0 -5.1%;
+        list-style: none;
+        font-size: 150%;
+        padding-top: 15%;
+        gap: 10%;
+        margin: 0;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 500ms ease-in-out;}
+
+        .mobile-nav-toggle[aria-expanded="true"] {
+            background-image: url(ikon.png);
+        }
+        .primary-navigation[data-visible="true"] {
+            transform: translateX(0);
+        }
+              
+        .mobile-nav-toggle {
+            display: block;
+            position: absolute;
+            z-index: 2000;
+            right: 1rem;
+            top: 2rem;
+            background: transparent;
+            background-image: url(ikon.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 1.5rem;
+            aspect-ratio: 1;
+            border: 0;
+        }
+           
+        .mobile-nav-toggle:focus-visible {
+            outline: 5px solid white;
+            outline-offset: 5px;
+        }
+    }
+
+@media (max-width: 1200px) and (min-width: 500px) {
+        .primary-navigation {
+            position: fixed;
+            z-index: 1000;
+            inset: 0 0 0 -5.1%;
+            list-style: none;
+            font-size: 150%;
+            padding-top: 5%;
+            margin: 0;
+            flex-direction: column;
+            transform: translateX(100%);
+            transition: transform 500ms ease-in-out;}
+
+        .mobile-nav-toggle[aria-expanded="true"] {
+                background-image: url(ikon.png);
+            }
+        .primary-navigation[data-visible="true"] {
+                transform: translateX(0);
+            }
+            .mobile-nav-toggle {
+                display: block;
+                position: absolute;
+                z-index: 2000;
+                right: 1rem;
+                top: 2rem;
+                background: transparent;
+                background-image: url(ikon.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 1.5rem;
+                aspect-ratio: 1;
+                border: 0;
+            }
+
+        .mobile-nav-toggle:focus-visible {
+                outline: 5px solid white;
+                outline-offset: 5px;
+            }
+}
+
 h1{
     font-size: 180px;
     color: #0220BF;
