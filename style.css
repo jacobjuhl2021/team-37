@@ -128,17 +128,23 @@
 #c_animation{
     width: 100%;
     height: auto;
+    margin-top: -7%;
 }
 /*Cases grid*/
-.c_griditem_1{grid-area: c1; background-color: aliceblue;}
-.c_griditem_2{grid-area: c2; background-color: aqua;}
-.c_griditem_3{grid-area: c3; background-color: aquamarine;}
-.c_griditem_4{grid-area: c4; background-color: beige;}
-.c_griditem_5{grid-area: c5; background-color: bisque;}
-.c_griditem_6{grid-area: c6; background-color: chartreuse;}
-.c_griditem_7{grid-area: c7; background-color: blue;}
-.c_griditem_8{grid-area: c8; background-color: blueviolet;}
-.c_griditem_9{grid-area: c9; background-color: brown;}
+.c_grid{
+    background-color: white;
+}
+#c_griditem_1{grid-area: c1; background-color: #5cbfcc ;}
+#c_griditem_2{grid-area: c2; background-color: #6b9299 ;}
+#c_griditem_3{grid-area: c3; background-color: #E5E2E2 ;}
+#c_griditem_4{grid-area: c4; background-color: antiquewhite ;}
+#c_griditem_5{grid-area: c5; background-color: aqua ;}
+#c_griditem_6{grid-area: c6; background-color: aquamarine ;}
+#c_griditem_7{grid-area: c7; background-color: bisque ;}
+#c_griditem_8{grid-area: c8; background-color: black ;}
+#c_griditem_9{grid-area: c9; background-color: blue ;}
+
+
 
 
 .c_grid_container{
@@ -149,11 +155,26 @@
     'c6     c7      c5'
     'c8     c7      c9';
     
+    grid-column-gap: 2vw;
+    
+    
 }
-.c_griditem>img{
-  width: 100%;
-  max-height: 100%; 
+.c_griditem_stor{
+    
+    height: 30vw;
+    object-fit: cover;
+    
 }
+.c_griditem_lille{
+    
+    margin-bottom: 2vw;
+    height: 15vw;
+    object-fit: cover;
+
+
+    
+}
+
 
 /*Karriere Side desktop*/
 
