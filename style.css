@@ -149,10 +149,14 @@
     'c1     c4      c5'
     'c6     c7      c5'
     'c8     c7      c9';
+    grid-template-columns: 33% 33% 33%;
+    max-width: 100%;
 }
 .c_grid_container>img{
-    object-fit: cover;
-    width: 30rem;
+    object-fit: scale-down;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     
 }
 
