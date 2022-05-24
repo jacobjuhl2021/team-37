@@ -132,13 +132,14 @@
     margin-top: -7%;
 }
 /*Cases grid*/
-.c_grid_container {
+.grid-container {
     display: grid;
-    gap: 10px;
-    background-color: #2196F3;
-    padding: 10px;
+    grid-gap: 4vw;
+    background-color: white;
+
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    
   }
   
   .grid-item {
@@ -146,37 +147,98 @@
     text-align: center;
     padding: 20px;
     font-size: 30px;
-
-    max-width: 100%;
-    height: auto;
   }
+
+  .stor{
+    max-height: 40vw;
+  }
+  .lille{
+    height: 16vw;
+  }
+
   
-  
-  .item1 {
+.item1 {
     grid-column: 1;
     grid-row: 1 / span 2;
-  }
+    background-image: url('cases_billeder/gridbilleder/c_boconcept.jpg');
+    background-size: 100% 100%;
+   
+
+}
+.item2{
+  background-image: url('cases_billeder/gridbilleder/c_bruelogkjaer.jpg');
+  background-size: 100% 100%;
   
+}
+.item3{
+  background-image: url('cases_billeder/gridbilleder/c_djoef.jpg');
+  background-size: 100% 100%;
+  
+}
+.item4{
+  background-image: url('cases_billeder/gridbilleder/c_huscompagniet.jpg');
+  background-size: 100% 100%;
+  
+}
   
   .item5 {
+    background-image: url('cases_billeder/gridbilleder/c_kia.jpg');
+    background-size: 100% 100%;
+  
     grid-column: 3;
     grid-row: 2 / span 2;
   }
+  .item6{
+    background-image: url('cases_billeder/gridbilleder/c_leo.jpg');
+    background-size: 100% 100%;
+  
+  }
 
   .item7{
+    background-image: url('cases_billeder/gridbilleder/c_lmwp.jpg');
+    background-size: 100% 100%;
+  
     grid-column: 2;
     grid-row: 3 / span 2;
   }
 
   .item8{
+    background-image: url('cases_billeder/gridbilleder/c_minetilbud.jpg');
+    background-size: 100% 100%;
+   
     grid-column: 1;
     grid-row: 4 / span 2;
   }
+  .item9{
+    background-image: url('cases_billeder/gridbilleder/c_molio.jpg');
+    background-size: 100% 100%;
+   
+  }
+  .item10{
+    background-image: url('cases_billeder/gridbilleder/c_nnit.jpg');
+    background-size: 100% 100%;
+   
+  }
+
 
   .item11{
+    background-image: url('cases_billeder/gridbilleder/c_struers.jpg');
+    background-size: 100% 100%;
+    
     grid-column: 3;
     grid-row: 5 / span 2;
   }
+  .item12{
+    background-image: url('cases_billeder/gridbilleder/c_sundhedsstyrelsen.jpg');
+    background-size: 100% 100%;
+    
+  }
+  .item13{
+    background-image: url('cases_billeder/gridbilleder/c_boconcept.jpg');
+    background-size: 100% 100%;
+    
+  }
+
 
 
 /*Karriere Side desktop*/
