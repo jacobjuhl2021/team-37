@@ -132,69 +132,51 @@
     margin-top: -7%;
 }
 /*Cases grid*/
-.c_grid{
-    background-color: white;
-}
-.c_griditem_1{grid-area: c1; background-color: #5cbfcc ; 
-}
-.c_griditem_2{grid-area: c2; background-color: #6b9299 ;
-}
-.c_griditem_3{grid-area: c3; background-color: #E5E2E2 ;
-}
-.c_griditem_4{grid-area: c4; background-color: antiquewhite ;
-}
-.c_griditem_5{grid-area: c5; background-color: aqua ;
-}
-.c_griditem_6{grid-area: c6; background-color: aquamarine ;
-}
-.c_griditem_7{grid-area: c7; background-color: bisque ; 
-}
-.c_griditem_8{grid-area: c8; background-color: black ;
-}
-.c_griditem_9{grid-area: c9; background-color: blue ;
-}
-.c_griditem_10{grid-area: c10; background-color: cornflowerblue ;
-}
-.c_griditem_11{grid-area: c11; background-color: chartreuse ;
-}
-.c_griditem_12{grid-area: c12; background-color: chocolate ;
-}
-.c_griditem_13{grid-area: c13; background-color: crimson ;
-}
-
-
-
-.c_grid_container{
+.c_grid_container {
     display: grid;
-    width: auto;
-    grid-template-areas: 
-    'c1 c6 c7'
-    'c1 c8 c2'
-    'c9 c3 c2'
-    'c4 c3 c10'
-    'c4 c11 c5'
-    'c12 c13 c5';
-    grid-gap: 40px;
-    padding-left: 50px;
-    padding-right: 50px; 
-    grid-template-columns: 3fr 3fr 3fr;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
 
-    
-}
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  .item1 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+  
+  
+  .item5 {
+    grid-column: 3;
+    grid-row: 2 / span 2;
+  }
 
-.c_griditem_stor>img{
-    
+  .item7{
+    grid-column: 2;
+    grid-row: 3 / span 2;
+  }
 
-    border-radius: 15px;
-    box-shadow: 5px 8px 7px rgba(0, 0, 0, 0.50);
-}
-.c_griditem_lille>img{
-    
+  .item8{
+    grid-column: 1;
+    grid-row: 4 / span 2;
+  }
 
-    border-radius: 15px;
-    box-shadow: 5px 8px 7px rgba(0, 0, 0, 0.50);
-    
-}
+  .item11{
+    grid-column: 3;
+    grid-row: 5 / span 2;
+  }
 
 
 /*Karriere Side desktop*/
