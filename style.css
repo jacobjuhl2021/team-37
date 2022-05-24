@@ -136,10 +136,11 @@
     display: grid;
     grid-gap: 4vw;
     background-color: white;
-
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    
+    padding-left:  13%;
+    padding-right: 13%;
+    padding-top: 6%;
   }
   
   .grid-item {
@@ -147,6 +148,8 @@
     text-align: center;
     padding: 20px;
     font-size: 30px;
+    border-radius: 6%;
+    
   }
 
   .stor{
