@@ -176,22 +176,23 @@
     grid-gap: 2vw;
     padding: 9vw;
     padding-left: 17vw;
-    padding-right: 17vw;
-    width: 100%;
-    
-    
-    
+    padding-right: 17vw; 
+    width: 100vw;
+    grid-template-columns: 33vw 33vw 33vw;
+
     
 }
-.c_griditem_stor{
+.c_griditem_stor>img{
     height: 30vw;
-    object-fit: cover;
+    
+    object-fit: fill;
     border-radius: 15px;
     box-shadow: 5px 8px 7px rgba(0, 0, 0, 0.50);
 }
-.c_griditem_lille{
+.c_griditem_lille>img{
     height: 14vw;
-    object-fit: cover;
+    
+    object-fit: fill;
     border-radius: 15px;
     box-shadow: 5px 8px 7px rgba(0, 0, 0, 0.50);
     
