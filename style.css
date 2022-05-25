@@ -274,6 +274,11 @@
    
 
 /*Lad os udfolde dit digitale potentiale*/
+.c_bundbar_baggrund{
+  width: 100%;
+  padding-bottom: 10%;
+  background-color: white;
+}
 .c_bundbar{
   background-color: #ff5b4c;
   width: 80vw;
