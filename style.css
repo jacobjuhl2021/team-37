@@ -144,6 +144,7 @@
   padding-left:  13%;
   padding-right: 13%;
   padding-top: 6%;
+  padding-bottom: 4%;
 }
 
 .grid-item {
@@ -359,7 +360,7 @@ box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
 
 
 .slider .slide-track {
-  animation: scroll 40s linear infinite;
+  animation: scroll 90s linear infinite;
   display: flex;
   width: calc(250px * 35);
 }
