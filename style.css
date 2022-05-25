@@ -134,115 +134,206 @@
     margin-top: -7%;
 }
 /*Cases grid*/
+/*Grid*/
 .grid-container {
-    display: grid;
-    grid-gap: 4vw;
-    background-color: white;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding-left:  13%;
-    padding-right: 13%;
-    padding-top: 6%;
-  }
-  
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px;
-    font-size: 30px;
-    border-radius: 15px;
-    
-  }
-
-  .stor{
-    max-height: 40vw;
-  }
-  .lille{
-    height: 16vw;
-  }
-
-  
-.item1 {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    background-image: url('cases_billeder/gridbilleder/c_boconcept.jpg');
-    background-size: 100% 100%;
-   
-
+  display: grid;
+  grid-gap: 4vw;
+  background-color: white;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding-left:  13%;
+  padding-right: 13%;
+  padding-top: 6%;
 }
-.item2{
-  background-image: url('cases_billeder/gridbilleder/c_bruelogkjaer.jpg');
-  background-size: 100% 100%;
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 15px;
   
+}
+
+.stor{
+  max-height: 40vw;
+}
+.lille{
+  height: 14.8vw;
+}
+
+/*overlay styling*/
+.card_text_hvid{
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding: 2% 6% 2% 6%;
+  font-weight: 900;
+  font-size: 1rem;
+  width: max-content;
+}
+.card_text_sort{
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 2% 6% 2% 6%;
+  font-weight: 900;
+  font-size: 1rem;
+  width: max-content;
+}
+
+/*Grid items*/
+.item1 {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  background-image: url('cases_billeder/gridbilleder/c_boconcept.jpg');
+  background-size: 100% 100%;
+  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+}
+
+.item2{
+background-image: url('cases_billeder/gridbilleder/c_bruelogkjaer.jpg');
+background-size: 100% 100%;
+color: #ff5b4c;
+box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
 }
 .item3{
-  background-image: url('cases_billeder/gridbilleder/c_djoef.jpg');
-  background-size: 100% 100%;
-  
+background-image: url('cases_billeder/gridbilleder/c_djoef.jpg');
+background-size: 100% 100%;
+color: #ff5b4c;
+box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
 }
 .item4{
-  background-image: url('cases_billeder/gridbilleder/c_huscompagniet.jpg');
+background-image: url('cases_billeder/gridbilleder/c_huscompagniet.jpg');
+background-size: 100% 100%;
+color: #ff5b4c;
+box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+}
+
+.item5 {
+  background-image: url('cases_billeder/gridbilleder/c_kia.JPG');
+  background-size: 100% 100%;
+
+  grid-column: 3;
+  grid-row: 2 / span 2;
+
+  color: #ff5b4c;
+  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+}
+.item6{
+  background-image: url('cases_billeder/gridbilleder/c_leo.jpg');
+  background-size: 100% 100%;
+  color: #ff5b4c;
+  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+}
+
+.item7{
+  background-image: url('cases_billeder/gridbilleder/c_lmwp.jpg');
+  background-size: 100% 100%;
+
+  grid-column: 2;
+  grid-row: 3 / span 2;
+
+  color: #ff5b4c;
+  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+}
+
+.item8{
+  background-image: url('cases_billeder/gridbilleder/c_minetilbud.jpg');
+  background-size: 100% 100%;
+ 
+  grid-column: 1;
+  grid-row: 4 / span 2;
+
+  color: #ff5b4c;
+  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+}
+.item9{
+  background-image: url('cases_billeder/gridbilleder/c_molio.jpg');
+  background-size: 100% 100%;
+  color: #ff5b4c;
+  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+}
+.item10{
+  background-image: url('cases_billeder/gridbilleder/c_nnit.jpg');
+  background-size: 100% 100%;
+  color: #ff5b4c;
+  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+}
+.item11{
+  background-image: url('cases_billeder/gridbilleder/c_struers.jpg');
   background-size: 100% 100%;
   
+  grid-column: 3;
+  grid-row: 5 / span 2;
+
+  color: #ff5b4c;
+  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
 }
-  
-  .item5 {
-    background-image: url('cases_billeder/gridbilleder/c_kia.jpg');
-    background-size: 100% 100%;
-  
-    grid-column: 3;
-    grid-row: 2 / span 2;
-  }
-  .item6{
-    background-image: url('cases_billeder/gridbilleder/c_leo.jpg');
-    background-size: 100% 100%;
-  
-  }
+.item12{
+  background-image: url('cases_billeder/gridbilleder/c_sundhedsstyrelsen.jpg');
+  background-size: 100% 100%;
+  color: #ff5b4c;
+  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+}
+.item13{
+  background-image: url('cases_billeder/gridbilleder/c_boconcept.jpg');
+  background-size: 100% 100%;
+  color: #ff5b4c;
+  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+}
+/*-------------------slide in animation------------------*/
+.container{
+  position: relative;
+  display: inline-block;
+}
 
-  .item7{
-    background-image: url('cases_billeder/gridbilleder/c_lmwp.jpg');
-    background-size: 100% 100%;
+.overlay{
+  position: absolute;
+  transition: all .3s ease;
+  opacity: 0;
+  background-color: #6b9299;
+  border-radius: 15px;
+}
+.container:hover .overlay{
+  opacity: 1;
   
-    grid-column: 2;
-    grid-row: 3 / span 2;
-  }
+}
 
-  .item8{
-    background-image: url('cases_billeder/gridbilleder/c_minetilbud.jpg');
-    background-size: 100% 100%;
-   
-    grid-column: 1;
-    grid-row: 4 / span 2;
-  }
-  .item9{
-    background-image: url('cases_billeder/gridbilleder/c_molio.jpg');
-    background-size: 100% 100%;
-   
-  }
-  .item10{
-    background-image: url('cases_billeder/gridbilleder/c_nnit.jpg');
-    background-size: 100% 100%;
-   
-  }
+.text_lille{
+  
+  color: white;
+  position: absolute;
+  text-align: left;
+  margin-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;  
+  font-weight: 900;
+  font-size: 1.3vw;
+}
+.text_stor{
+  color: white;
+  position: absolute;
+  text-align: left;
+  margin-top: 20%;
+  padding-left: 10%;
+  padding-right: 10%;  
+  font-weight: 1000;
+  font-size: 2vw;
+}
 
+.overlayLeft{
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+}
 
-  .item11{
-    background-image: url('cases_billeder/gridbilleder/c_struers.jpg');
-    background-size: 100% 100%;
-    
-    grid-column: 3;
-    grid-row: 5 / span 2;
-  }
-  .item12{
-    background-image: url('cases_billeder/gridbilleder/c_sundhedsstyrelsen.jpg');
-    background-size: 100% 100%;
-    
-  }
-  .item13{
-    background-image: url('cases_billeder/gridbilleder/c_boconcept.jpg');
-    background-size: 100% 100%;
-    
-  }
+.container:hover .overlayLeft{
+  width: 100%;
+
+}
 
 /* samarbejdspartnere*/
 
@@ -262,6 +353,7 @@
   overflow: hidden;
   position: relative;
   width: 100%;
+  
 }
 
 
