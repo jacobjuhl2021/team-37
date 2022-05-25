@@ -271,7 +271,30 @@
 }
    
 
-
+/*Lad os udfolde dit digitale potentiale*/
+.c_bundbar{
+  background-color: #ff5b4c;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;}
+#c_bundbar_tekst{
+  color: white;
+  text-align: center;
+  margin-bottom: 0%;
+  padding-top: 3%;}
+.c_bundbar_flex {
+  display: flex;
+  justify-content: center;
+}
+.c_bundbar_knap{
+padding: 2% 5% 2% 5%;
+border-radius: 12px;
+border-color: white;
+border-style: solid;
+background-color: #ff5b4c;
+color: white;
+margin: 3%;}
 
 
 /*Karriere Side desktop*/
