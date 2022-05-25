@@ -336,6 +336,19 @@ box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
 
 }
 
+/*Tekst over samarbejdspartnere*/
+.c_bundbar_lilletekst{
+  padding-top: 6%;
+  text-align: center;
+  background-color: white;
+  color: #ff5b4c;
+  font-size: 1.8vw;
+}
+.c_bundbar_tekst{
+  text-align: center;
+  background-color: white;
+  font-size: 1.7vw;
+}
 /* samarbejdspartnere*/
 
 
@@ -360,7 +373,7 @@ box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
 
 
 .slider .slide-track {
-  animation: scroll 90s linear infinite;
+  animation: scroll 300s linear infinite;
   display: flex;
   width: calc(250px * 35);
 }
