@@ -2,7 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
   }
+  
   body{
     background: linear-gradient(to left, #0220bf 22%, #5cbfcc 100%);
     
@@ -269,6 +271,7 @@
   display: flex;
   width: calc(250px * 35);
 }
+<<<<<<< Updated upstream
    
 
 /*Lad os udfolde dit digitale potentiale*/
@@ -422,3 +425,5 @@ h1{
 
 
 
+=======
+>>>>>>> Stashed changes
