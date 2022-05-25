@@ -1,0 +1,384 @@
+body{
+    font-family: Avenir Next, sans-serif;
+}
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Højden er låst til at fylde hele skærmen */
+    width: 200px; /* Breden af navbaren */
+    position: fixed; /* Bliver det samme sted */
+    z-index: 1; /* Stay on top */
+    top: 0; 
+    left: 0;
+    background-color: #0020BF; 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 40px;}
+  
+  /* Styling af links */
+  .sidenav a {
+    padding: 10px 8px 10px 16px;
+    text-decoration: none; /* fjerner understreg på links*/
+    font-size: 28px;
+    color: #f7f4f4;
+    margin-top: 20px;
+    display: block;} /*får alt til at stå bedre over hindanden og skubber kassen der markere active tagget til den fulde brede*/
+  
+  
+  
+  .main {
+    margin-left: 240px; /* Sikre at indeholdet på siden ikke gemmer sig bag navbaren */
+    padding: 0px 10px;}
+  .active {background-color: #666565;}
+
+ 
+/* slut på navbar*/
+
+/* farver*/
+
+
+#black{
+    grid-area: black;}
+#coal{
+    grid-area: coal;}
+#dusk{
+    grid-area: dusk;}
+#silver{
+    grid-area: silver;}
+#smoke{
+    grid-area: smoke;}
+#invisible{
+    grid-area: invisible;}
+
+#black, #coal, #dusk, #silver, #smoke, #invisible{
+    color: #FF5B4C;
+    width: 150px;
+    height: 160px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 45px;
+    font-size: 14px;
+    
+}
+#black{
+    margin-left: 220px;
+    background-color: #141414;
+    
+}
+#coal{
+    background-color: #333232;
+}
+#dusk{
+    background-color: #666565;
+}
+#silver{
+    background-color: #a6a4a4;
+}
+#smoke{
+    background-color: #e5e2e2;
+}
+#invisible{
+    background-color: #f7f4f4;
+}
+.tones{
+    display: grid;
+    grid-template-areas: 
+    'black coal dusk silver smoke invisible';
+}
+
+
+
+
+#blue{
+    grid-area: blue;}
+#blue50{
+    grid-area: blue50;}
+#blue25{
+    grid-area: blue25;}
+
+#blue, #blue50, #blue25{
+    color: white;
+    background-color: #0020BF;
+    width: 300px;
+    height: 160px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 45px;
+    font-size: 28px;
+    
+}
+#blue{
+    margin-left: 220px;
+}
+#blue50{
+    opacity: 50%;
+}
+#blue25{
+    opacity: 25%;
+}
+.blå{
+    display: grid;
+    grid-template-areas: 
+    'blue blue50 blue25';
+}
+
+
+#neon{
+    grid-area: neon;}
+#neon50{
+    grid-area: neon50;}
+#neon25{
+    grid-area: neon25;}
+
+#neon, #neon50, #neon25{
+    color: white;
+    background-color: #FF5B4C;
+    width: 300px;
+    height: 160px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 45px;
+    font-size: 28px;
+    
+}
+#neon{
+    margin-left: 220px;
+}
+#neon50{
+    opacity: 50%;
+}
+#neon25{
+    opacity: 25%;
+}
+.neon{
+    display: grid;
+    grid-template-areas: 
+    'neon neon50 neon25';
+}
+
+.v_gradient{
+background: linear-gradient(to left, #0220bf 22%, #5cbfcc 100%);
+height: 100px;
+margin-left: 250px;
+margin-right: 250px;
+}
+
+.v_blue50{
+background-color: #0020BF;
+opacity: 50%;
+height: 100px;
+margin-left: 250px;
+margin-right: 250px;
+}
+
+.v_black{
+background-color: #141414;
+height: 100px;
+margin-left: 250px;
+margin-right: 250px;
+}
+
+.v_white{
+background-color: #FFFFFF;
+height: 100px;
+outline-style: solid;
+margin-left: 250px;
+margin-right: 250px;
+}
+
+.v_neon{
+background-color: #FF5B4C;
+height: 100px;
+margin-left: 250px;
+margin-right: 250px;
+}
+
+#tekstiboks{
+text-align: center;
+color: white;
+padding: 20px;
+}
+
+#tekstiboksw{
+color:black;
+text-align: center;
+padding: 20px;
+}
+
+.v_grå{
+background-color: #E5E2E2;
+height: 100px;
+margin-left: 250px;
+margin-right: 250px;
+}
+    
+
+/*slut på farver*/
+
+
+
+
+/*typografi*/
+.maintypografi{
+    color: #00454e;
+}
+.farvertypografi1{
+    color: #141414;
+    background-color: #E5E2E2;
+    width: 500px;
+    height: 28px;
+    text-align: center;
+}
+.farvertypografi2{
+    color: #FFFFFF;
+    background: linear-gradient(to left, #0220bf 22%, #5cbfcc 100%);
+    width: 500px;
+    height: 28px;
+    text-align: center;
+}
+
+.farvertypografi3{
+    color: #141414;
+    background: white;
+    width: 500px;
+    height: 28px;
+    text-align: center;
+    outline-style: solid;
+}
+
+/*slut typografi*/
+
+/*ikoner*/
+.knapbillede{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+/*ikon grid*/
+.knaptitel1{
+    margin-left: 260px;
+}
+.container{
+    margin-left: 240px; /* Sikre at indeholdet på siden ikke gemmer sig bag navbaren */
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.bredde{
+    width: 400px;
+}
+.bredde1{
+    width: 180px;
+}
+
+.guideknap {
+    color: #FEFEFE;
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-size: 17px;
+    background: #00454E;
+    border: none;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+
+  .breadcrumbing1 {
+    height: 30px;
+    width: 15vw;
+    background-color: #00454E20;
+    border: #00454E20;
+    border-style: solid;
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+
+  .breadcrumbing2 {
+    height: 30px;
+    width: 15vw;
+    background-color: #00454e;
+    border: #00454E20;
+    border-style: solid;
+    margin-top: 5px;
+    border-radius: 5px;
+    
+  }
+
+
+
+/*billeder*/
+.guidetitel{
+    text-align: center;
+    
+}
+.guidebilleder{
+    max-width: 300px;
+    height: auto;
+}
+
+.forsidebillede{
+    max-width: 500px;
+    height: auto;
+    background-color: black;
+    margin-left: 230px;
+    display: block;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  left: 311px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 150px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
