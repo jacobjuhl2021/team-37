@@ -370,5 +370,9 @@ margin-right: 250px;
 .arrayo {
     opacity: 0;
     transform: translateY(-4000px);
-    transform: translateX(300px);
+    transform: translateX(250px);
 }
+
+.arrayo:hover {
+    opacity: 1.0;
+  }
