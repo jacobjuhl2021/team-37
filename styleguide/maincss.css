@@ -366,3 +366,9 @@ margin-right: 250px;
   position: absolute;
   top: 0;
 }
+
+.arrayo {
+    opacity: 0;
+    transform: translateY(-4000px);
+    transform: translateX(300px);
+}
