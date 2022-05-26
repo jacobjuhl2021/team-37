@@ -250,11 +250,12 @@ margin-right: 250px;
 .knapbillede{
     max-width: 200px;
     max-height: 200px;
+    background-color: white;
 }
 
 /*ikon grid*/
 .knaptitel1{
-    margin-left: 260px;
+    margin-left: 234px;
 }
 .container{
     margin-left: 240px; /* Sikre at indeholdet på siden ikke gemmer sig bag navbaren */
@@ -270,17 +271,7 @@ margin-right: 250px;
     width: 180px;
 }
 
-.guideknap {
-    color: #FEFEFE;
-    font-family: proxima-nova;
-    font-weight: 400;
-    font-size: 17px;
-    background: #00454E;
-    border: none;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-  }
+
 
   .breadcrumbing1 {
     height: 30px;
@@ -313,6 +304,8 @@ margin-right: 250px;
 .guidebilleder{
     max-width: 300px;
     height: auto;
+    margin: 30px;
+    border-radius: 6%;
 }
 
 .forsidebillede{
@@ -321,6 +314,64 @@ margin-right: 250px;
     background-color: black;
     margin-left: 230px;
     display: block;
+    border-radius: 6%;
+}
+
+.fblogo{
+width:150px;
+margin: 50px;
+}
+
+.linkedinlogo{
+width: 150px;
+margin: 50px;
+}
+
+.boconcept{
+width: 150px;
+border-radius: 6%;
+margin-left: 79px;
+}
+
+.lmwp{
+max-width: 300px;
+border-radius: 6%;
+}
+
+.aarhus{
+width: 200px;
+margin-bottom: 10px;
+margin-left: 127px;
+}
+
+.malmo{
+width: 200px;
+margin-left: 135px;
+margin-bottom: 10px;
+}
+
+.leo{
+width:200px;
+border-radius: 6%;
+margin-left: 97px;
+}
+
+.atp{
+max-width: 300px;
+height: auto;
+margin: 30px;
+margin-left: 13px;
+}
+
+.banedanmark{
+max-width:300px;
+height: auto;
+    margin: 30px;
+}
+
+.boconcept1{
+max-width: 300px;
+margin-left: 62px;
 }
 
 * {box-sizing:border-box}
@@ -365,4 +416,37 @@ margin-right: 250px;
   padding: 150px;
   position: absolute;
   top: 0;
+}
+
+.k_nav_button {
+    display: block;
+    justify-content: center;
+    background-color: transparent;
+    border: 3px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    padding: 1.2rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 5%;
+    width:200px;
+}
+
+.button{
+display: flex;
+background-color: #6b9299;
+border: none;
+color: white;
+padding-top: 10%;
+padding-left: 15%;
+padding-right: 15%;
+padding-bottom: 10%;
+text-align: center;
+text-decoration: none;
+font-size: 20px;
+border-radius: 10px;
+justify-content: center;
+width: 200px;
 }
