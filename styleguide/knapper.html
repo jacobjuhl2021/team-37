@@ -40,6 +40,7 @@
         <p       class="bredde">Læs mere knappen er inde på karriere siden, og bliver brugt til at læse mere omkring jobstillingen.</p>
         <span    class="bredde"><b>HTML:</b><br> &lt;button class="k_nav_button">LÆS MERE&lt;/button</span>
         <span    class="bredde1"><b>CSS:</b><br>
+          .k_nav_button{
           display: block;
           justify-content: center;
           background-color: transparent;
@@ -101,8 +102,8 @@
     <div class="container">
         <div><img class="knapbillede" src="billeder/linkedinlogo.png" alt="Sprog knap" style="background-color: #FFFFFF"></div>
         <p       class="bredde">Linkedin knappen linker direkte til Pentias Linkedin.</p>
-        <span    class="bredde">HTML:<br> &lt;li>&lt;img src="billeder/footerbilleder/sprog.png" class="footerbilleder">: Ændre sprog&lt;/li></span>
-        <span    class="bredde1">CSS:<br>
+        <span    class="bredde"><b>HTML:</b><br> &lt;li>&lt;img src="billeder/footerbilleder/sprog.png" class="footerbilleder">: Ændre sprog&lt;/li></span>
+        <span    class="bredde1"><b>CSS:</b><br>
             .footerbilleder{<br>
                 padding-top: 5px;<br>
                 height: 25px;
@@ -111,233 +112,55 @@
     </div>
 
 
-    <h1     class="knaptitel1">Venstre knap </h1>
+    <h1     class="knaptitel1">Nyhedsbrev knap</h1>
     <div class="container">
         
-        <div><img class="knappil" src="knapper/left.png" alt="Venstre knap"></div>
-        <p      class="bredde">Venstre knappen er til for at lade brugeren navigere tilbage til tidligere slide i en guide</p>
-        <span   class="bredde"> HTML:<br> &lt;button id="left" onclick="backward()">&lt;img src="billeder/left-right/gronpil.png" alt="left arrow">&lt;/button></span>
-        <span   class="bredde1">CSS:<br>
-            #left {<br>
-                margin-top: 3px;<br>
-                margin-left: 10px;<br>
-                margin-right: 10px;<br>
-                height: 30px;
-              }
+      <button class="c_bundbar_knap">NYHEDSBREV</button>
+        <p      class="bredde">Nyhedsbrev knappen bliver brugt til at oprette et nyhedsbrev.</p>
+        <span   class="bredde"><b>HTML:</b><br> &lt;button class="c_bundbar_knap">NYHEDSBREV&lt;/button></span>
+        <span   class="bredde1"><b>CSS:</b><br>
+          .c_bundbar_knap{
+          padding: 2% 5% 2% 5%;
+          border-radius: 12px;
+          border-color: white;
+          border-style: solid;
+          background-color: #ff5b4c;
+          color: white;
+          margin: 3%;
+      }<br>
+               <br>
+                <br>
+                <br>
+              
+              
           </span>
-          <span   class="bredde1">js:<br>
-            function backward(){<br>
-                i--;<br>
-              if(i &lt; 0){<br>
-                i = 0
-              }
-              document.slide.src = images[i];<br>
-              breadcrumbs[i+1].style.<br>backgroundColor = null;<br>
-              guideText()
-            }
           </span>
         </div>
 
     
 
-          <h1     class="knaptitel1">Højre knap </h1>
+          <h1     class="knaptitel1">Ring mig op knap</h1>
           <div class="container">
               
-              <div><img class="knappil" src="knapper/right.png" alt="Højre knap"></div>
-              <p      class="bredde">Højre knappen er til for at lade brugeren navigere tilbage til tidligere slide i en guide</p>
-              <span   class="bredde"> HTML:<br> &lt;button id="right" onclick="forward()">&lt;img src="billeder/left-right/gronpilhojre.png" alt="right arrow">&lt;/button></span>
-              <span   class="bredde1">CSS:<br>
-                #right{<br>
-                    margin-top: 3px;<br>
-                    margin-right: 10px;<br>
-                    margin-left: 10px;<br>
-                    height: 30px;
-                  }
+            <button class="c_bundbar_knap">RING MIG OP</button>
+              <p      class="bredde">Ring mig op knappen bliver brugt til at blive ringet op.</p>
+              <span   class="bredde"><b>HTML:</b><br> &lt;button class="c_bundbar_knap">RING MIG OP&lt;/button></span>
+              <span   class="bredde1"><b>CSS:</b><br>
+                .c_bundbar_knap{
+                  padding: 2% 5% 2% 5%;
+                  border-radius: 12px;
+                  border-color: white;
+                  border-style: solid;
+                  background-color: #ff5b4c;
+                  color: white;
+                  margin: 3%;<br>
+                    <br>
+                    <br>
+                    <br>
+                    
                 </span>
-                <span   class="bredde1">js:<br>
-                    function forward(){<br>
-                        if(i &lt; images.length - 1){<br>
-                          i++;<br>
-                        }<br>
-                        document.slide.src = images[i];<br>
-                        breadcrumbs[i].style.<br>backgroundColor = "#00454E";<br>
-                        guideText()
-                      }
+                
                 </span>
     </div>
-
-
-
-
-
-    <h1     class="knaptitel1">Kontakt Vejleder </h1>
-    <div class="container">
-        
-        <button class="guideknap" id="knap1"> Kontakt Vejleder </button>
-        <p      class="bredde">Kontakt Vejleder knappen leder til guiden af samme navn</p>
-        <span   class="bredde"> HTML:<br> &lt;button onclick="document.location='guide.html'" class="knap" id="knap 1"> Kontakt Vejleder &lt;/button></span>
-        <span   class="bredde1">CSS:<br>
-            .knap {<br>
-                color: #FEFEFE;<br>
-                font-family: proxima-nova;<br>
-                font-weight: 400;<br>
-                font-size: 17px;<br>
-                background: #00454E;<br>
-                border: none;<br>
-                padding: 10px;<br>
-                margin-bottom: 5px;<br>
-                border-radius: 5px;
-              }
-              
-          </span>
-          <span   class="bredde1">js:<br>
-            onclick="document.<br>location='guide.html'"
-        </span>
-
-    </div>
-
-    <h1     class="knaptitel1">Find Underviser </h1>
-    <div class="container">
-        
-        <button class="guideknap" > Find Underviser </button>
-        <p      class="bredde">Find Underviser knappen leder til guiden af samme navn</p>
-        <span   class="bredde"> HTML:<br> &lt;button onclick="document.location='guide2.html'" class="knap" id="knap 2"> Find Underviser &lt;/button></span>
-        <span   class="bredde1">CSS:<br>
-            .knap {<br>
-                color: #FEFEFE;<br>
-                font-family: proxima-nova;<br>
-                font-weight: 400;<br>
-                font-size: 17px;<br>
-                background: #00454E;<br>
-                border: none;<br>
-                padding: 10px;<br>
-                margin-bottom: 5px;<br>
-                border-radius: 5px;
-              }
-              
-          </span>
-          <span   class="bredde1">js:<br>
-            onclick="document.<br>location='guide2.html'"
-        </span>
-
-    </div>
-
-    <h1     class="knaptitel1">Se Lektier </h1>
-    <div class="container">
-        
-        <button class="guideknap"> Se Lektier </button>
-        <p      class="bredde">Se Lektier knappen leder til guiden af samme navn</p>
-        <span   class="bredde"> HTML:<br> &lt;button onclick="document.location='guide3.html'" class="knap" id="knap 3"> Se Lektier &lt;/button></span>
-        <span   class="bredde1">CSS:<br>
-            .knap {<br>
-                color: #FEFEFE;<br>
-                font-family: proxima-nova;<br>
-                font-weight: 400;<br>
-                font-size: 17px;<br>
-                background: #00454E;<br>
-                border: none;<br>
-                padding: 10px;<br>
-                margin-bottom: 5px;<br>
-                border-radius: 5px;
-              }
-              
-          </span>
-          <span   class="bredde1">js:<br>
-            onclick="document.<br>location='guide3.html'"
-        </span>
-
-    </div>
-
-    <h1     class="knaptitel1">Se Klasseliste </h1>
-    <div class="container">
-        
-        <button class="guideknap"> Se Klasseliste </button>
-        <p      class="bredde">Se Klasseliste knappen leder til guiden af samme navn</p>
-        <span   class="bredde"> HTML:<br> &lt;button onclick="document.location='guide4.html'" class="knap" id="knap 4"> Se Klasseliste &lt;/button></span>
-        <span   class="bredde1">CSS:<br>
-            .knap {<br>
-                color: #FEFEFE;<br>
-                font-family: proxima-nova;<br>
-                font-weight: 400;<br>
-                font-size: 17px;<br>
-                background: #00454E;<br>
-                border: none;<br>
-                padding: 10px;<br>
-                margin-bottom: 5px;<br>
-                border-radius: 5px;
-              }
-                                        
-          </span>
-          <span   class="bredde1">js:<br>
-            onclick="document.<br>location='guide4.html'"
-        </span>
-
-    </div>
-
-
-    <h1     class="knaptitel1">breadcrumb 1 </h1>
-    <div class="container">
-        
-        <div class="breadcrumbing1" id="breadcrumbOne"></div>
-        <p      class="bredde">Denne breadcrumb vises når man ikke er på dette skridt i guiden</p>
-        <span   class="bredde"> HTML:<br> &lt;div class="breadcrumbing1" id="breadcrumbOne">&lt;/div></span>
-        <span   class="bredde1">CSS:<br>
-            .breadcrumbing1 {<br>
-                height: 30px;<br>
-                width: 15vw;<br>
-                border: #00454E;<br>
-                border-style: solid;<br>
-                margin-top: 5px;<br>
-                border-radius: 5px;
-              }
-                                        
-          </span>
-          <span   class="bredde1">js:<br>
-            breadcrumbs[i].style.<br>backgroundColor = "#00454E";
-        </span>
-
-    </div>
-
-    <h1     class="knaptitel1">breadcrumb 2 </h1>
-    <div class="container">
-        
-        <div class="breadcrumbing2" id="breadcrumbTwo"></div>
-        <p      class="bredde">Denne breadcrumb vises når man har været eller er på det viste del af guiden</p>
-        <span   class="bredde"> HTML:<br> &lt;div class="breadcrumbing2" id="breadcrumbTwo">&lt;/div></span>
-        <span   class="bredde1">CSS:<br>
-            .breadcrumbing2 {<br>
-                height: 30px;<br>
-                width: 15vw;<br>
-                background-color: #00454E20;<br>
-                border: #00454E20;<br>
-                border-style: solid;<br>
-                margin-top: 5px;<br>
-                border-radius: 5px;
-              }
-                                        
-          </span>
-          <span   class="bredde1">js:<br>
-            breadcrumbs[i+1].style.<br>backgroundColor = null;
-        </span>
-
-    </div>
-    
-    <div class="arrayo">
-      <form name="demo">
-          <table id="demo">
-            <th>Loop/Array</th>
-            <tr>
-              <td>Vælg nummer</td>
-              <td>
-                <select id = "tal">
-        
-                </select>
-              </td>
-            </tr>
-          </table>
-        </form>
-      </div>
-
-    
 
 </body>
