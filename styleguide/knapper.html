@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style Guide</title>
     <link rel="stylesheet" href=maincss.css>
-    <link rel="stylesheet" href="https://use.typekit.net/lwp1ldh.css">
 </head>
 <body>
 <!--navigation bar-->
@@ -23,22 +22,74 @@
         
         <div><img class="knapbillede" src="billeder/pentialogo.png" alt="pentialogo" style="background-color: #00454e;"></div>
         <p      class="bredde">Denne knap sidder oppe i venstre hjørne, og gør det muligt for forbrugeren at komme tilbage på startsiden.</p>
-        <span   class="bredde"> HTML:<br> &lt;li>&lt;img src="billeder/footerbilleder/HOME BUTTON.png" class="footerbilleder">: Sender dig tilbage til hovedmenu'en&lt;/li></span>
-        <span   class="bredde1">CSS:<br>
-            .footerbilleder{<br>
-                padding-top: 5px;<br>
-                height: 25px;
-              }
+        <span   class="bredde"><b>HTML:</b><br> &lt;img src="billeder/pentialogohvid.png" alt="pentia logo" class="n_logo">
+        </span>
+        <span   class="bredde1"><b>CSS:</b><br>
+          .n_logo {
+            width: 100%;
+            height: auto;
+            } 
+         <br>     
           </span>
 
     </div>
 
-    <h1     class="knaptitel1">Info ikon </h1>
+    <h1     class="knaptitel1">Læs mere knap</h1>
     <div class="container">
-        <div><img class="knapbillede" src="knapper/info.png" alt="Info knap" style="background-color: #00454e;"></div>
-        <p       class="bredde">Info knappen er til for at lade brugeren tilgå forklaring om hvordan siden fungere.</p>
-        <span    class="bredde">HTML:<br> &lt;li>&lt;img src="billeder/footerbilleder/QUESTIONMARK.png" class="footerbilleder">: Hjælp til App'en &lt;/li></span>
-        <span    class="bredde1">CSS:<br>
+      <div class="nav_knap"><button class="k_nav_button">LÆS MERE</button></div>
+        <p       class="bredde">Læs mere knappen er inde på karriere siden, og bliver brugt til at læse mere omkring jobstillingen.</p>
+        <span    class="bredde"><b>HTML:</b><br> &lt;button class="k_nav_button">LÆS MERE&lt;/button</span>
+        <span    class="bredde1"><b>CSS:</b><br>
+          display: block;
+          justify-content: center;
+          background-color: transparent;
+          border: 3px solid white;
+          color: white;
+          padding: 1.2rem 2rem;
+          text-align: center;
+          text-decoration: none;
+          font-size: 1rem;
+          border-radius: 5px;
+          margin: auto;
+          margin-bottom: 5%;<br>
+      
+              }
+            </span>
+    </div>
+
+    <h1     class="knaptitel1">Læs mere knap i grid</h1>
+    <div class="container">
+      <div class="k_indhold2"><button class="button">Læs mere</button></div>
+      <p       class="bredde">Denne "læs mere" knap er sat ind i vores grid system inde på karriere siden.</p>
+        <span    class="bredde"><b>HTML:</b><br> &lt;button class="button">Læs mere&lt;/button</span>
+        <span    class="bredde1"><b>CSS:</b><br>
+          .button{
+            display: flex;
+            background-color: #6b9299;
+            border: none;
+            color: white;
+            padding-top: 10%;
+            padding-left: 15%;
+            padding-right: 15%;
+            padding-bottom: 10%;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 10px;
+            justify-content: center;<br>
+                <br>
+                
+              }
+            </span>
+    </div>
+
+
+    <h1     class="knaptitel1">Facebook ikon</h1>
+    <div class="container">
+        <div><img class="knapbillede" src="billeder/facebooklogopng.png" alt="FB knap" ></div>
+        <p       class="bredde">Facebook knappen linker direkte til Pentias Facebook side.</p>
+        <span    class="bredde"><b>HTML:</b><br> &lt;li>&lt;img src="billeder/footerbilleder/SoMe (1).png" class="footerbilleder">: Viser UCL's sociale medier&lt;/li></span>
+        <span    class="bredde1"><b>CSS:</b><br>
             .footerbilleder{<br>
                 padding-top: 5px;<br>
                 height: 25px;
@@ -46,37 +97,10 @@
             </span>
     </div>
 
-    <h1     class="knaptitel1">Itslearning ikon </h1>
+    <h1     class="knaptitel1">Linkedin logo</h1>
     <div class="container">
-        <div><img class="knapbillede" src="knapper/itslearning.png" alt="ItsLearning knap" style="background-color: #00454e;"></div>
-        <p       class="bredde">ItsLearning knappen er til for at lade brugeren tilgå itslearning direkte fra vores side.</p>
-        <span    class="bredde">HTML:<br> &lt;li>&lt;img src="billeder/footerbilleder/itslearning-logo.png" class="footerbilleder">: Sender dig videre til ItsLearning.com&lt;/li></span>
-        <span    class="bredde1">CSS:<br>
-            .footerbilleder{<br>
-                padding-top: 5px;<br>
-                height: 25px;
-              }
-            </span>
-    </div>
-
-
-    <h1     class="knaptitel1">SoMe ikon </h1>
-    <div class="container">
-        <div><img class="knapbillede" src="knapper/some.png" alt="SoMe knap" style="background-color: #00454e;"></div>
-        <p       class="bredde">SoMe knappen er til for at lade brugeren tilgå UCL's sociale medier direkte fra vores side.</p>
-        <span    class="bredde">HTML:<br> &lt;li>&lt;img src="billeder/footerbilleder/SoMe (1).png" class="footerbilleder">: Viser UCL's sociale medier&lt;/li></span>
-        <span    class="bredde1">CSS:<br>
-            .footerbilleder{<br>
-                padding-top: 5px;<br>
-                height: 25px;
-              }
-            </span>
-    </div>
-
-    <h1     class="knaptitel1">Sprog ikon </h1>
-    <div class="container">
-        <div><img class="knapbillede" src="knapper/sprog.png" alt="Sprog knap" style="background-color: #00454e;"></div>
-        <p       class="bredde">Sprog knappen er til for at lade brugeren skifte mellem dansk og engelsk.</p>
+        <div><img class="knapbillede" src="billeder/linkedinlogo.png" alt="Sprog knap" style="background-color: #FFFFFF"></div>
+        <p       class="bredde">Linkedin knappen linker direkte til Pentias Linkedin.</p>
         <span    class="bredde">HTML:<br> &lt;li>&lt;img src="billeder/footerbilleder/sprog.png" class="footerbilleder">: Ændre sprog&lt;/li></span>
         <span    class="bredde1">CSS:<br>
             .footerbilleder{<br>
@@ -297,6 +321,22 @@
         </span>
 
     </div>
+    
+    <div class="arrayo">
+      <form name="demo">
+          <table id="demo">
+            <th>Loop/Array</th>
+            <tr>
+              <td>Vælg nummer</td>
+              <td>
+                <select id = "tal">
+        
+                </select>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
 
     
 
