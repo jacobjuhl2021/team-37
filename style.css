@@ -572,6 +572,7 @@ border-style: solid;
 background-color: #ff5b4c;
 color: white;
 margin: 3%;}
+
 /*Karriere Side desktop*/
 
 .nav_tekst{
@@ -648,16 +649,83 @@ margin: 3%;}
   grid-area: k6;
   }
 
+  @keyframes fadein {
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    }
+
+.k_bubbles{grid-area: b-1;
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-right: -115%;  
+  position: relative;
+}
+
+.k_bubbles2{grid-area: b-2;
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-left: -115%;
+  position: relative;
+}
+
+.k_bubbles3{grid-area: b-3;
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-right: -115%;
+  position: relative;
+
+}
+
+.k_bubbles4{grid-area: b-4;
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-left: -115%;
+  position: relative;
+}
+
+.k_bubbles5{grid-area: b-5;
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-right: -100%;
+  position: relative;
+}
+
+.k_bubbles6{grid-area: b-6;
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  margin-left: -100%;
+  position: relative;
+}
+
+
 .griditems2{
   display: grid;
   grid-template-areas: 
-  '.      k1      k1'
-  'k2     k2      .'
-  '.      k3      k3'
-  'k4     k4      .'
-  '.      k5      k5'
-  'k6     k6      .';
-  grid-gap: 4%;
+  'b-1 k1 k1'
+  'k2 k2 b-2'
+  'b-3 k3 k3'
+  'k4 k4 b-4'
+  'b-5 k5 k5'
+  'k6 k6 b-6 ';
+  grid-row-gap: 4%;
   background-color: white;
   padding-top: 5%;
   padding-bottom: 28%;
@@ -665,10 +733,6 @@ margin: 3%;}
   width: 100%;
   height: auto;
 }
-
-
-
-
 
 .k_grid_right{
   max-width: 700px;
@@ -683,16 +747,15 @@ margin: 3%;}
   border-radius: 15px 15px 15px 60px;
   box-shadow:  15px 15px 40px 0px rgba(0, 0, 0, 0.59);
   opacity: 0;
-
-  
 }
+
 .k_grid_left{
   max-width: 700px;
   max-height: 548px;
   background-color: #E5E2E2;
   padding-top: 5%;
   padding-right: 12%;
-  padding-left: 10%;
+  padding-left: 13%;
   padding-bottom: 5%;
   margin-left: 10%;
   margin-right: 10%;
@@ -704,7 +767,7 @@ margin: 3%;}
 
 @keyframes slideInLeft {
 0%{
-    opacity: 0.1;
+    opacity: 0;
     transform: translateX(-100%);
 }
 100%{
@@ -715,7 +778,7 @@ margin: 3%;}
 
 @keyframes slideInRight {
 0%{
-    opacity: 0.1;
+    opacity: 0;
     transform: translateX(100%);
 }
 100%{
@@ -725,14 +788,15 @@ margin: 3%;}
 }
 
 .showleft{
--webkit-animation: slideInLeft 2s ease-in-out 0.1s forwards;
-animation: slideInLeft 2s ease-in-out 0.1s forwards;
+-webkit-animation: slideInLeft 1s ease-in-out 0.1s forwards;
+animation: slideInLeft 1s ease-in-out 0.1s forwards;
 }
 
 .showright{
--webkit-animation: slideInRight 2s ease-in-out 0.1s forwards;
-animation: slideInRight 2s ease-in-out 0.1s forwards;
+-webkit-animation: slideInRight 1s ease-in-out 0.1s forwards;
+animation: slideInRight 1s ease-in-out 0.1s forwards;
 }
+
 
 .button{
 display: flex;
@@ -815,40 +879,66 @@ justify-content: center;
   padding-top: 10%;
 }
 
+.k_bundgrid_right{grid-area: bg2;}
+.k_bundgrid_left{grid-area: bg1;}
+
 .k_bundgrid{
   padding-bottom: 5%;
-  display: flex;
-  justify-content: center;
-  grid-gap:10%;
+  grid-column-gap: 5%;
+  display: grid;
+  grid-template-areas: 
+  '. bg1 bg2 .';
   background-color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
 }
 
 .k_bundgrid_right{
   max-width: 700px;
   max-height: 548px;
   background-color: #E5E2E2;
-  padding-top: 5%;
-  padding-right: 12%;
-  padding-left: 10%;
-  padding-bottom: 5%;
-  margin-left: auto;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow:  -15px 15px 40px 0px rgba(0, 0, 0, 0.59);
+  padding-top: 10%;
+  padding-right: 20%;
+  padding-left: 16%;
+  padding-bottom: 10%;
+  margin-right: auto;
+  border-radius: 12px 12px 12px 12px;
+  box-shadow:  7.5px 10px 40px 0px rgba(0, 0, 0, 0.59);
 }
 
 .k_bundgrid_left{
   max-width: 700px;
   max-height: 548px;
   background-color: #E5E2E2;
-  padding-top: 5%;
-  padding-right: 12%;
-  padding-left: 10%;
-  padding-bottom: 5%;
-  margin-right: auto;
-  border-radius: 15px 15px 15px 15px;
-  box-shadow:  -15px 15px 40px 0px rgba(0, 0, 0, 0.59);
-
+  padding-top: 10%;
+  padding-right: 20%;
+  padding-left: 16%;
+  padding-bottom: 10%;
+  margin-left: auto;
+  border-radius: 12px 12px 12px 12px;
+  box-shadow:  -7.5px 10px 40px 0px rgba(0, 0, 0, 0.59);
 }
+
+#t_right{
+  font-size: 15px;
+}
+
+#t_left{
+  font-size: 15px;
+}
+
+.bund_tekst{
+  padding: 5%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.bund_tekst_left{
+  padding: 5%;
+  font-size: 20px;
+  text-align: center;
+}
+
 
 /* Grid footer*/
 
@@ -861,7 +951,6 @@ display: grid;
 grid-template-areas:
   'a b c';
   width: 100%;
-  max-width: 1920px;
   background: linear-gradient(to left, #0220bf 22%, #5cbfcc 100%);
   height: auto;
   grid-template-columns: 1fr 1fr 1fr;
@@ -878,8 +967,8 @@ grid-template-areas:
 .gfo1{
 width: 100%;
 height: auto;
-border-left: 4px solid #E9F4F4;
-border-right: 4px solid #E9F4F4;
+border-left: 0.4rem solid #E9F4F4;
+border-right: 0.4rem solid #E9F4F4;
 display: flex;
 justify-content: center;
 grid-gap: 5%;
@@ -896,7 +985,7 @@ justify-content: center;
 }
 
 .gfo1-3{
-font-size: 18px;
+font-size: 1rem;
 padding-top: 17%;
 }
 
@@ -907,7 +996,7 @@ display: flex;
 justify-content: center;
 padding-left: 5rem;
 padding-right: 3rem;
-font-size: 20px;
+font-size: 1rem;
 }
 
 .gfo3-1{grid-area: d;}
@@ -923,7 +1012,6 @@ width: 100%;
 height: auto;
 padding-top: 2rem;
 text-align: center;
-grid-gap: 0px;
 display: flex;
 display: grid;
 grid-template-areas: 
@@ -938,11 +1026,11 @@ align-items: center;
 
 
 #footer-alm-skrift{
-font-size: 18px;
+font-size: 1.2rem;
 }
 
 #fo-h3{
-font-size: 35px;
+font-size: 2.5rem;
 }
 
 .b_kbh{grid-area: b1;}
@@ -953,6 +1041,8 @@ font-size: 35px;
 
 
 .gridf_byer{
+width: 100%;
+height: auto;
 grid-gap: 10%;
 display: grid;
 grid-template-areas: 
