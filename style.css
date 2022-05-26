@@ -550,7 +550,7 @@ margin: 3%;}
 .k_nav_button{
   display: block;
   justify-content: center;
-  background-color: transparent;
+  background: none;
   border: 3px solid white;
   color: white;
   padding: 1.2rem 2rem;
@@ -560,9 +560,39 @@ margin: 3%;}
   border-radius: 5px;
   margin: auto;
   margin-bottom: 5%;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
 }
 
+.k_nav_button::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #5cbfcc;
+  z-index: -1;
+  transition: 0.8s;
+}
 
+.btn1::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+
+.btn1:hover::before{
+  height: 180%;
+}
+
+.btn1{
+  color: white;
+}
+
+.btn1:hover{
+  color: white
+}
 
 .k_topgrid{
   font-size: 25px;
@@ -1282,6 +1312,10 @@ grid-template-columns: 1fr 1fr;
 
 #t_right{
   font-size: 12px;
+  padding-top: 7%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 7%;
 }
     
 #t_left{
