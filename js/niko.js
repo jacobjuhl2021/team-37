@@ -1,0 +1,1 @@
+//Javascript af Nikolai//
