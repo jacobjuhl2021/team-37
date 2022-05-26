@@ -133,276 +133,448 @@
     height: auto;
     margin-top: -7%;
 }
-/*Cases grid*/
-/*Grid*/
-.grid-container {
-  display: grid;
-  grid-gap: 4vw;
-  background-color: white;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  padding-left:  13%;
-  padding-right: 13%;
-  padding-top: 6%;
-  padding-bottom: 4%;
-}
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px;
-  font-size: 30px;
-  border-radius: 15px;
-  
-}
-
-.stor{
-  max-height: 40vw;
-}
-.lille{
-  height: 14.8vw;
-}
-
-/*overlay styling*/
-.card_text_hvid{
-
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  padding: 2% 6% 2% 6%;
-  font-weight: 900;
-  font-size: 1rem;
-  width: max-content;
-}
-.card_text_sort{
-  color: black;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 15px;
-  padding: 2% 6% 2% 6%;
-  font-weight: 900;
-  font-size: 1rem;
-  width: max-content;
-}
-
-/*Grid items*/
-.item1 {
-  grid-column: 1;
-  grid-row: 1 / span 2;
-  background-image: url('cases_billeder/gridbilleder/c_boconcept.jpg');
-  background-size: 100% 100%;
-  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
-}
-
-.item2{
-background-image: url('cases_billeder/gridbilleder/c_bruelogkjaer.jpg');
-background-size: 100% 100%;
-color: #ff5b4c;
-box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
-}
-.item3{
-background-image: url('cases_billeder/gridbilleder/c_djoef.jpg');
-background-size: 100% 100%;
-color: #ff5b4c;
-box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
-}
-.item4{
-background-image: url('cases_billeder/gridbilleder/c_huscompagniet.jpg');
-background-size: 100% 100%;
-color: #ff5b4c;
-box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
-}
-
-.item5 {
-  background-image: url('cases_billeder/gridbilleder/c_kia.JPG');
-  background-size: 100% 100%;
-
-  grid-column: 3;
-  grid-row: 2 / span 2;
-
-  color: #ff5b4c;
-  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
-}
-.item6{
-  background-image: url('cases_billeder/gridbilleder/c_leo.jpg');
-  background-size: 100% 100%;
-  color: #ff5b4c;
-  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
-}
-
-.item7{
-  background-image: url('cases_billeder/gridbilleder/c_lmwp.jpg');
-  background-size: 100% 100%;
-
-  grid-column: 2;
-  grid-row: 3 / span 2;
-
-  color: #ff5b4c;
-  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
-}
-
-.item8{
-  background-image: url('cases_billeder/gridbilleder/c_minetilbud.jpg');
-  background-size: 100% 100%;
- 
-  grid-column: 1;
-  grid-row: 4 / span 2;
-
-  color: #ff5b4c;
-  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
-}
-.item9{
-  background-image: url('cases_billeder/gridbilleder/c_molio.jpg');
-  background-size: 100% 100%;
-  color: #ff5b4c;
-  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
-}
-.item10{
-  background-image: url('cases_billeder/gridbilleder/c_nnit.jpg');
-  background-size: 100% 100%;
-  color: #ff5b4c;
-  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
-}
-.item11{
-  background-image: url('cases_billeder/gridbilleder/c_struers.jpg');
-  background-size: 100% 100%;
-  
-  grid-column: 3;
-  grid-row: 5 / span 2;
-
-  color: #ff5b4c;
-  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
-}
-.item12{
-  background-image: url('cases_billeder/gridbilleder/c_sundhedsstyrelsen.jpg');
-  background-size: 100% 100%;
-  color: #ff5b4c;
-  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
-}
-.item13{
-  background-image: url('cases_billeder/gridbilleder/c_boconcept.jpg');
-  background-size: 100% 100%;
-  color: #ff5b4c;
-  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
-}
-/*-------------------slide in animation------------------*/
-.container{
-  position: relative;
-  display: inline-block;
-}
-
-.overlay{
-  position: absolute;
-  transition: all .3s ease;
-  opacity: 0;
-  background-color: #6b9299;
-  border-radius: 15px;
-}
-.container:hover .overlay{
-  opacity: 1;
-  
-}
-
-.text_lille{
-  
-  color: white;
-  position: absolute;
-  text-align: left;
-  margin-top: 10%;
-  padding-left: 10%;
-  padding-right: 10%;  
-  font-weight: 900;
-  font-size: 1.3vw;
-}
-.text_stor{
-  color: white;
-  position: absolute;
-  text-align: left;
-  margin-top: 20%;
-  padding-left: 10%;
-  padding-right: 10%;  
-  font-weight: 1000;
-  font-size: 2vw;
-}
-
-.overlayLeft{
-  height: 100%;
-  width: 0;
-  top: 0;
-  left: 0;
-}
-
-.container:hover .overlayLeft{
+/*------------------------------------------------------------------------*/
+/*Pentia logo animation*/
+#c_animation{
   width: 100%;
+  height: auto;
+  margin-top: -7%;
+}
+/*mobil grid*/
+/*items*/
+.item1m {
+background-image: url('cases_billeder/gridbilleder/c_boconcept.jpg');
+height: 70vw;
+grid-row: 1;
+text-align: center;
+background-size: 100% 100%;
+}
+.item1_text{
+grid-row: 2;
+padding-bottom: 5%;
+}
+.item2m{
+background-image: url('cases_billeder/gridbilleder/c_bruelogkjaer.jpg');
+height: 70vw;
+grid-row: 3;
+text-align: center;
+background-size: 100% 100%;
+}
+.item2_text{
+  grid-row: 4;
+  padding-bottom: 5%;
+}
+.item3m{
+background-image: url('cases_billeder/gridbilleder/c_djoef.jpg');
+height: 70vw;
+grid-row: 5;
+text-align: center;
+background-size: 100% 100%;
+}
+.item3_text{
+  grid-row: 6;
+  padding-bottom: 5%;
+}
+
+.item4m{
+background-image: url('cases_billeder/gridbilleder/c_huscompagniet.jpg');
+height: 70vw;
+grid-row: 7;
+text-align: center;
+background-size: 100% 100%;
+}
+.item4_text{
+  grid-row: 8;
+  padding-bottom: 5%;
+}
+
+.item5m{
+background-image: url('cases_billeder/gridbilleder/c_kia.JPG');
+height: 70vw;
+grid-row: 9;
+text-align: center;
+background-size: 100% 100%;
+}
+.item5_text{
+  grid-row: 10;
+  padding-bottom: 5%;
+}
+
+.item6m{
+  background-image: url('cases_billeder/gridbilleder/c_leo.jpg');
+  height: 70vw;
+  grid-row: 11;
+  text-align: center;
+  background-size: 100% 100%;
+}
+.item6_text{
+  grid-row: 12;
+padding-bottom: 5%;
+}
+
+.item7m{
+  background-image: url('cases_billeder/gridbilleder/c_lmwp.jpg');
+  height: 70vw;
+grid-row: 13;
+text-align: center;
+background-size: 100% 100%;
+}
+.item7_text{
+  grid-row: 14;
+  padding-bottom: 5%;
+}
+.item8m{
+  background-image: url('cases_billeder/gridbilleder/c_minetilbud.jpg');
+  height: 70vw;
+grid-row: 15;
+text-align: center;
+background-size: 100% 100%;
+}
+.item8_text{
+  grid-row: 16;
+  padding-bottom: 5%;
+}
+
+.item9m{
+  background-image: url('cases_billeder/gridbilleder/c_molio.jpg');
+  height: 70vw;
+grid-row: 17;
+text-align: center;
+background-size: 100% 100%;
+}
+.item9_text{
+  grid-row: 18;
+  padding-bottom: 5%;
+}
+
+.item10m{
+  background-image: url('cases_billeder/gridbilleder/c_nnit.jpg');
+  height: 70vw;
+grid-row: 19;
+text-align: center;
+background-size: 100% 100%;
+}
+.item10_text{
+  grid-row: 20;
+  padding-bottom: 5%;
+}
+
+.item11m{
+  background-image: url('cases_billeder/gridbilleder/c_struers.jpg');
+  height: 70vw;
+grid-row: 21;
+text-align: center;
+background-size: 100% 100%;
+}
+.item11_text{
+  grid-row: 22;
+  padding-bottom: 5%;
+}
+
+.item12m{
+  background-image: url('cases_billeder/gridbilleder/c_sundhedsstyrelsen.jpg');
+  height: 70vw;
+grid-row: 23;
+text-align: center;
+background-size: 100% 100%;
+}
+.item12_text{
+  grid-row: 24;
+  padding-bottom: 5%;
+}
+
+.c_billedetext{
+  padding-left: 2%;
+  padding-top: 2%;
+}
+
+
+
+
+.grid-container-mobil{
+display: grid;
+background-color: white;
+
+
 
 }
+/*overlay styling*/
+    .card_text_hvid{
+      color: white;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      padding: 2% 6% 2% 6%;
+      font-weight: 900;
+      font-size: 1rem;
+      width: max-content;}
+    .card_text_sort{
+      color: black;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 15px;
+      padding: 2% 6% 2% 6%;
+      font-weight: 900;
+      font-size: 1rem;
+      width: max-content;}
+
+.grid-container{
+display: none;
+}
+/*Grid pc*/
+@media (min-width: 1200px) {
+    .grid-container-mobil{
+      display: none;
+    }
+    
+    .grid-container {
+    display: grid;
+    grid-gap: 4vw;
+    background-color: white;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding-left:  13%;
+    padding-right: 13%;
+    padding-top: 6%;
+    padding-bottom: 4%;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 15px;
+  }
+  
+  .stor{
+    max-height: 40vw;
+  }
+  .lille{
+    height: 14.8vw;
+  }
+  
+  /*Grid items*/
+  .item1 {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background-image: url('cases_billeder/gridbilleder/c_boconcept.jpg');
+    background-size: 100% 100%;
+    box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+  }
+  
+  .item2{
+  background-image: url('cases_billeder/gridbilleder/c_bruelogkjaer.jpg');
+  background-size: 100% 100%;
+  color: #ff5b4c;
+  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+  }
+  .item3{
+  background-image: url('cases_billeder/gridbilleder/c_djoef.jpg');
+  background-size: 100% 100%;
+  color: #ff5b4c;
+  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+  }
+  .item4{
+  background-image: url('cases_billeder/gridbilleder/c_huscompagniet.jpg');
+  background-size: 100% 100%;
+  color: #ff5b4c;
+  box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+  }
+  
+  .item5 {
+    background-image: url('cases_billeder/gridbilleder/c_kia.JPG');
+    background-size: 100% 100%;
+  
+    grid-column: 3;
+    grid-row: 2 / span 2;
+  
+    color: #ff5b4c;
+    box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+  }
+  .item6{
+    background-image: url('cases_billeder/gridbilleder/c_leo.jpg');
+    background-size: 100% 100%;
+    color: #ff5b4c;
+    box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+  }
+  
+  .item7{
+    background-image: url('cases_billeder/gridbilleder/c_lmwp.jpg');
+    background-size: 100% 100%;
+  
+    grid-column: 2;
+    grid-row: 3 / span 2;
+  
+    color: #ff5b4c;
+    box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+  }
+  
+  .item8{
+    background-image: url('cases_billeder/gridbilleder/c_minetilbud.jpg');
+    background-size: 100% 100%;
+  
+    grid-column: 1;
+    grid-row: 4 / span 2;
+  
+    color: #ff5b4c;
+    box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+  }
+  .item9{
+    background-image: url('cases_billeder/gridbilleder/c_molio.jpg');
+    background-size: 100% 100%;
+    color: #ff5b4c;
+    box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+  }
+  .item10{
+    background-image: url('cases_billeder/gridbilleder/c_nnit.jpg');
+    background-size: 100% 100%;
+    color: #ff5b4c;
+    box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+  }
+  .item11{
+    background-image: url('cases_billeder/gridbilleder/c_struers.jpg');
+    background-size: 100% 100%;
+    
+    grid-column: 3;
+    grid-row: 5 / span 2;
+  
+    color: #ff5b4c;
+    box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+  }
+  .item12{
+    background-image: url('cases_billeder/gridbilleder/c_sundhedsstyrelsen.jpg');
+    background-size: 100% 100%;
+    color: #ff5b4c;
+    box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+  }
+  .item13{
+    background-image: url('cases_billeder/gridbilleder/c_boconcept.jpg');
+    background-size: 100% 100%;
+    color: #ff5b4c;
+    box-shadow: 19px 18px 40px 0px rgba(0,0,0,0.37);
+  }
+  /*-------------------slide in animation------------------*/
+  .container{
+    position: relative;
+    display: inline-block;
+  }
+  
+  .overlay{
+    position: absolute;
+    transition: all .3s ease;
+    opacity: 0;
+    background-color: #6b9299;
+    border-radius: 15px;
+  }
+  .container:hover .overlay{
+    opacity: 1;
+    
+  }
+  
+  .text_lille{
+    
+    color: white;
+    position: absolute;
+    text-align: left;
+    margin-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;  
+    font-weight: 900;
+    font-size: 1.3vw;
+  }
+  .text_stor{
+    color: white;
+    position: absolute;
+    text-align: left;
+    margin-top: 20%;
+    padding-left: 10%;
+    padding-right: 10%;  
+    font-weight: 1000;
+    font-size: 2vw;
+  }
+  
+  .overlayLeft{
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  .container:hover .overlayLeft{
+    width: 100%;
+  }
+}
+
+
+
+
 
 /*Tekst over samarbejdspartnere*/
 .c_bundbar_lilletekst{
-  padding-top: 6%;
-  text-align: center;
-  background-color: white;
-  color: #ff5b4c;
-  font-size: 1.8vw;
+padding-top: 6%;
+text-align: center;
+background-color: white;
+color: #ff5b4c;
+font-size: 20px;
 }
 .c_bundbar_tekst{
-  text-align: center;
-  background-color: white;
-  font-size: 1.7vw;
+text-align: center;
+background-color: white;
+font-size: 1.2rem;
 }
 /* samarbejdspartnere*/
 
 
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
- }
-  100% {
-    transform: translateX(calc(-30vw * 60));
- }
+0% {
+  transform: translateX(0);
+}
+100% {
+  transform: translateX(calc(-30vw * 60));
+}
 }
 .slider {
-  background: white;
-  height: 20vw;
-  padding-bottom: 2%;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  
+background: white;
+height: 20vw;
+padding-bottom: 2%;
+overflow: hidden;
+position: relative;
+width: 100%;
+
 }
 
 .slide>img{
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
 
 .slider .slide-track {
-  animation: scroll 300s linear infinite;
-  display: flex;
-  width: calc(250px * 35);
+animation: scroll 300s linear infinite;
+display: flex;
+width: calc(250px * 35);
 }
-   
+ 
 
 /*Lad os udfolde dit digitale potentiale*/
 .c_bundbar_baggrund{
-  width: 100%;
-  padding-bottom: 6%;
-  background-color: white;
+width: 100%;
+padding-bottom: 6%;
+padding-top: 20px;
+background-color: white;
 }
 .c_bundbar{
-  background-color: #ff5b4c;
-  width: 73vw;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 20px;}
+background-color: #ff5b4c;
+width: 73vw;
+margin-left: auto;
+margin-right: auto;
+border-radius: 20px;}
 #c_bundbar_tekst{
-  color: white;
-  text-align: center;
-  margin-bottom: 0%;
-  padding-top: 3%;
-  font-size: 3vw;}
+color: white;
+text-align: center;
+margin-bottom: 0%;
+padding-top: 3%;
+font-size: 3vw;}
 .c_bundbar_flex {
-  display: flex;
-  justify-content: center;
+display: flex;
+justify-content: center;
 }
 .c_bundbar_knap{
 padding: 2% 5% 2% 5%;
@@ -412,7 +584,6 @@ border-style: solid;
 background-color: #ff5b4c;
 color: white;
 margin: 3%;}
-
 /*Karriere Side desktop*/
 
 .nav_tekst{

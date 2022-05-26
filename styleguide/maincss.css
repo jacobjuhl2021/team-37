@@ -250,11 +250,12 @@ margin-right: 250px;
 .knapbillede{
     max-width: 200px;
     max-height: 200px;
+    background-color: white;
 }
 
 /*ikon grid*/
 .knaptitel1{
-    margin-left: 260px;
+    margin-left: 234px;
 }
 .container{
     margin-left: 240px; /* Sikre at indeholdet på siden ikke gemmer sig bag navbaren */
@@ -270,17 +271,7 @@ margin-right: 250px;
     width: 180px;
 }
 
-.guideknap {
-    color: #FEFEFE;
-    font-family: proxima-nova;
-    font-weight: 400;
-    font-size: 17px;
-    background: #00454E;
-    border: none;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-  }
+
 
   .breadcrumbing1 {
     height: 30px;
@@ -313,6 +304,8 @@ margin-right: 250px;
 .guidebilleder{
     max-width: 300px;
     height: auto;
+    margin: 30px;
+    border-radius: 6%;
 }
 
 .forsidebillede{
@@ -321,6 +314,64 @@ margin-right: 250px;
     background-color: black;
     margin-left: 230px;
     display: block;
+    border-radius: 6%;
+}
+
+.fblogo{
+width:150px;
+margin: 50px;
+}
+
+.linkedinlogo{
+width: 150px;
+margin: 50px;
+}
+
+.boconcept{
+width: 150px;
+border-radius: 6%;
+margin-left: 79px;
+}
+
+.lmwp{
+max-width: 300px;
+border-radius: 6%;
+}
+
+.aarhus{
+width: 200px;
+margin-bottom: 10px;
+margin-left: 127px;
+}
+
+.malmo{
+width: 200px;
+margin-left: 135px;
+margin-bottom: 10px;
+}
+
+.leo{
+width:200px;
+border-radius: 6%;
+margin-left: 97px;
+}
+
+.atp{
+max-width: 300px;
+height: auto;
+margin: 30px;
+margin-left: 13px;
+}
+
+.banedanmark{
+max-width:300px;
+height: auto;
+    margin: 30px;
+}
+
+.boconcept1{
+max-width: 300px;
+margin-left: 62px;
 }
 
 * {box-sizing:border-box}
