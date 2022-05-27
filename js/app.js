@@ -6,7 +6,7 @@ const callback = (elements) => {
         if(ele.isIntersecting  && !ele.target.classList.contains('showright')){
             ele.target.classList.add('showright')
         }else{
-            
+            ele.target.classList.remove('showright')
         }
     })
 }
@@ -19,7 +19,7 @@ const callback2 = (elements) => {
         if(ele.isIntersecting  && !ele.target.classList.contains('showleft')){
             ele.target.classList.add('showleft')
         }else{
-            
+            ele.target.classList.remove('showleft')
         }
     })
 }
