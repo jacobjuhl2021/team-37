@@ -1201,7 +1201,7 @@ grid-template-columns: 1fr 1fr;
     'b-4 k4'
     'b-5 k5'
     'b-6 k6';
-    grid-row-gap: 2%;
+    grid-row-gap: 5%;
     background-color: white;
     justify-content: center;
     padding-top: 10%;
@@ -1357,7 +1357,7 @@ grid-template-columns: 1fr 1fr;
 .k_bundgrid_left{grid-area: bg1;}
 
 .k_bundgrid{
-  padding-top: 32%;
+  padding-top: 76%;
   padding-bottom: 10%;
   display: grid;
   justify-content: center;
