@@ -1,7 +1,7 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Frem og tilbage knapper
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
