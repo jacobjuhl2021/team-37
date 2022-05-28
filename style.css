@@ -796,6 +796,10 @@ text-decoration: none;}
     width: 100%;
     height: auto;
   }
+
+  .btn2, .btn3, .btn4, .btn5, .btn6, .btn7, .btn8, .btn9{
+    cursor: pointer;
+  }
   
   .k_grid_right{
     max-width: 700px;
