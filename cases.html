@@ -8,29 +8,40 @@
   <link rel="stylesheet" href= style.css>
   <link rel="stylesheet" href="https://use.typekit.net/lwp1ldh.css">
   <script src="js/casesjs" defer></script>
+  <script src="js/menu.js" defer></script>
 </head>
 <body>
 
-  <div class="nav-box">
-    <div>
-      <img src="billeder/pentialogohvid.png" alt="pentia logo" class="logo">
-    </div>
-    
-        <header class="primary-header flex">
-            <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false"></span></button>
-            <nav>
-                <ul id="primary-navigation" class="primary-navigation underline-indicators flex">
-                    <li class="active"> <a class="n_child" href="index.html">      STRATECUTION</a>
-                    <li>                <a class="n_child" href="destination.html">               CASES</a>
-                    <li>                <a class="n_child" href="crew.html">                      SERVICES</a>
-                    <li>                <a class="n_child" href="technology.html">                KARRIERE</a>
-                    <li>                <a class="n_child" href="technology.html">                NYT</a>
-                    <li>                <a class="n_child" href="technology.html">                EVENTS</a>
-                    <li>                <a class="n_child" href="technology.html">                OM PENTIA</a>
-                    </ul>
-            </nav>    
-        </header>
+  <header class="side">
+
+    <div class="navbar">
+      <div class="nav-logo">
+        <a href="cases.html"><img src="billeder/pentialogohvid.png" alt="Pentia hvidt logo" id="logo-nav"></a>
       </div>
+      <nav>
+        <ul class="nav-menu li_liste">
+        </ul>
+      </nav>
+    </div> 
+    <div class="navbar navbar--mobile">
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav class="nav-menu nav-menu--mobile">
+        <ul class="nav-menu li_liste">
+          <li class="nav-item"><a href="https://pentia.dk/stratecution/" class="nav-link">Stratecution</a></li>
+          <li class="nav-item"><a href="cases.html" class="nav-link">Cases</a></li>
+          <li class="nav-item"><a href="https://pentia.dk/services/" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="karriere.html" class="nav-link">Karriere</a></li>
+          <li class="nav-item"><a href="https://pentia.dk/nyt/" class="nav-link">Nyt</a></li>
+          <li class="nav-item"><a href="https://pentia.dk/events/" class="nav-link">Events</a></li>
+          <li class="nav-item"><a href="https://pentia.dk/om-pentia/" class="nav-link">Om Pentia</a></li>
+        </ul>
+      </nav>
+    </div>  
+  </header>
 
   <div class="c_logo_animation">
     <img src="cases_billeder/logo_animation.gif" alt="pentia logo animation" id="c_animation">
