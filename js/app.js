@@ -1,7 +1,7 @@
 const cardsleft = document.querySelectorAll('.k_grid_left');
 
 
-const callback = (elements) => {
+const callback = function(elements) {
     elements.forEach(ele => {
         if(ele.isIntersecting  && !ele.target.classList.contains('showright')){
             ele.target.classList.add('showright')
@@ -14,7 +14,7 @@ const callback = (elements) => {
 const cardsright = document.querySelectorAll('.k_grid_right');
 
 
-const callback2 = (elements) => {
+const callback2 = function(elements) {
     elements.forEach(ele => {
         if(ele.isIntersecting  && !ele.target.classList.contains('showleft')){
             ele.target.classList.add('showleft')
