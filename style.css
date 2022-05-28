@@ -10,87 +10,153 @@
     
 }
 
-/*Nav bar*/
-.flex {
-  padding-top: 1rem;
-  display: flex;
-  flex-direction: row;
-  padding-left: 2rem;
-  justify-content: center ;
-  grid-column: 2;
-  align-items: center; }
-
-.pentia_logo{
-margin: auto;
+header {
+  opacity: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background: linear-gradient(to left, #0220bf 22%, #5cbfcc 100%);
 }
 
+.side {
+  opacity: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 2;}
 
-.n_child{
-  text-align: left;
-  margin-left: -20%;}
-/* primary-header */
-.logo {
-  padding-top: 1.2rem;
- height: auto;
- grid-column: 1;}
-.nav-box{
-  display: grid;
-  grid-template-columns: 1fr 8fr 1fr;}
-.primary-navigation {
-  gap: 2vw;
-  list-style: none;}
-
-.primary-navigation a {
-  text-decoration: none;
-  color: white;}
-
-.mobile-nav-toggle {
-  display: none;}
-
-@media (max-width: 1200px) {
-  .primary-navigation {
-      --underline-gap: .5rem;
-      position: fixed;
-      z-index: 1000;
-      inset: 0 0 0 0;
-      list-style: none;
-      padding: min(20rem, 15vh) 2rem;
-      margin: 0;
-      flex-direction: column;
-      transform: translateX(100%);
-      transition: transform 500ms ease-in-out;
-      background-color: rgba(02, 32, 191, 1);
-      text-align: center;}
-  
-  .primary-navigation[data-visible="true"] {
-      transform: translateX(0);}
-  
-  .primary-navigation.underline-indicators > .active {
-     border: 0;}
-  
-  .mobile-nav-toggle {
-      display: block;
-      position: absolute;
-      z-index: 2000;
-      right: 1rem;
-      top: 2rem;
-      background: transparent;
-      background-image: url(ikon.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 1.5rem;
-      aspect-ratio: 1;
-      border: 0;}
-  
-  .mobile-nav-toggle[aria-expanded="true"] {
-      background-image: url(ikon.png);
+  li{
+    list-style: none;
   }
   
-  .mobile-nav-toggle:focus-visible {
-      outline: 5px solid white;
-      outline-offset: 5px;
-      width: 100%;} 
-}
+  ul{
+    justify-content: space-between;
+  }
+
+  .nav-item > a {
+    min-width: 150px;
+  }
+
+  .nav-box{
+
+    justify-content: space-between;
+  }
+
+
+  a{
+    text-decoration: none;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-around;
+    padding-right:2rem;
+    z-index: 100;
+    padding: 1rem;
+    align-items: center;
+    position: relative;
+  }
+
+  .navbar--mobile {
+    display: none;
+    justify-content: flex-end;
+  }
+
+  .nav-logo {
+    position: absolute;
+    left: 1rem;
+  }
+  
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:1.2rem;
+    padding-bottom: 1.2rem;
+    gap: 1rem;
+    font-size: 1.2rem;
+    position: relative;
+
+  }
+
+  .nav-menu--mobile {
+    position: absolute;
+  }
+
+
+  #logo-nav{
+    width: auto;
+    max-width: 200px;
+    margin-right: 20px;
+  }
+
+  
+
+  .hamburger{
+    cursor: pointer;
+    align-self: flex-end;
+    z-index: 5;
+  }
+
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+
+.nav-menu a {
+  color: white;}
+
+
+  @media (max-width:768px){
+    .navbar {
+      display: none;
+    }
+
+    .navbar--mobile {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+    .nav-menu {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(to left, #0220bf 22%, #5cbfcc 100%);
+      position: absolute;
+      transition: 0.5s ease-in;
+      opacity: 95%;
+
+    }
+    
+   
+
+    .nav-item{
+      margin: 16px 0;
+    }
+    
+    .nav-menu.active{
+      background: linear-gradient(to left, #0220bf 22%, #5cbfcc 100%);
+      left: 0;
+
+    }
+  }
+
 /*Slut på navbar*/
 /*Pentia logo animation*/
 #c_animation{
