@@ -4,7 +4,7 @@ body{
 /* The sidebar menu */
 .sidenav {
     height: 100%; /* Højden er låst til at fylde hele skærmen */
-    width: 200px; /* Breden af navbaren */
+    width: 200px; /* Bredden af navbaren */
     position: fixed; /* Bliver det samme sted */
     z-index: 1; /* Stay on top */
     top: 0; 
