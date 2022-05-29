@@ -1,4 +1,4 @@
-/* menubar js */
+//javascript af Nikolai
 /* Acess - hvilke elementer skal aktiveres */
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
