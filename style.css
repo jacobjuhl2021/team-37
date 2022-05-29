@@ -613,6 +613,11 @@ text-decoration: none;}
 /*Karriere Side desktop*/
 @media (min-width: 700px){
 
+  
+  .nav_knap{
+    padding-left: 42.5%;
+    padding-right: 42.5%;
+  }
 
   .nav_tekst{
     padding-top: 10%;
@@ -873,7 +878,7 @@ text-decoration: none;}
   }
   
   
-  .button{
+  .k_button{
   display: flex;
   background-color: #6b9299;
   border: none;
@@ -1156,7 +1161,10 @@ text-decoration: none;}
       font-family: sans-serif;
     }
   
-
+    .nav_knap{
+      padding-left: 30%;
+      padding-right: 30%;
+    }
 
     .nav_tekst{
       text-align: center;
@@ -1367,8 +1375,9 @@ text-decoration: none;}
       max-height: 80%;
     }
   
-    .button{
+    .k_button{
       display: flex;
+      justify-content: center;
       background-color: #6b9299;
       border: none;
       color: white;
@@ -1430,14 +1439,12 @@ text-decoration: none;}
   
       .mobil_img_aarhus{
         display: flex;
-        justify-content: baseline;
         max-height: 90%;
         max-width: 90%;
       }
   
       .mobil_img_aarhus2{
         display: flex;
-        justify-content: baseline;
         max-height: 80%;
         max-width: 90%;
   
