@@ -435,6 +435,10 @@ margin-right: 656px;
     transform: translateX(250px);
 }
 
+.arrayo:hover {
+    opacity: 1;
+}
+
 .button{
 display: flex;
 background-color: #6b9299;
