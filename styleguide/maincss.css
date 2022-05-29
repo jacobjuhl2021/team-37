@@ -191,13 +191,13 @@ margin-left: 250px;
 margin-right: 250px;
 }
 
-#tekstiboks{
+.tekstiboks{
 text-align: center;
 color: white;
 padding: 20px;
 }
 
-#tekstiboksw{
+.tekstiboksw{
 color:black;
 text-align: center;
 padding: 20px;
@@ -297,11 +297,11 @@ margin-right: 250px;
 
 
 /*billeder*/
-.guidetitel{
+.titel{
     text-align: center;
     
 }
-.guidebilleder{
+.billeder{
     max-width: 300px;
     height: auto;
     margin: 30px;
