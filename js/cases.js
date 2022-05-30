@@ -15,7 +15,7 @@ let baggrund_tekst = document.getElementById('c_bundbar_tekst');
 
 let j = true;
 // Mouseover der fortæller id="c_bundbar_flex" at den skal skifte farve
-baggrund_kasse.addEventListener('mouseover', function handleMouseOver() {
+baggrund_kasse.addEventListener('mouseover', function musOver() {
     j = false
 // så længe j er false skift de 2 farver
 while(j == false){
@@ -24,7 +24,7 @@ while(j == false){
     j = true
 }});
 // mouseout fortæller at den kassen skal tilbage til sine gammle farver
-baggrund_kasse.addEventListener('mouseout', function handleMouseOver() {
+baggrund_kasse.addEventListener('mouseout', function musOver() {
     
     baggrund_tekst.style.backgroundColor = farve2;
     baggrund_kasse.style.backgroundColor = farve2;
@@ -36,7 +36,7 @@ baggrund_kasse.addEventListener('mouseout', function handleMouseOver() {
 
 
 // samme som foroven men hvis id="c_bundbar_tekst" er mouseover punktet
-baggrund_tekst.addEventListener('mouseover', function handleMouseOver() {
+baggrund_tekst.addEventListener('mouseover', function musOver() {
     j = false
 
 while(
@@ -46,7 +46,7 @@ while(
     j = true
 }});
 
-baggrund_tekst.addEventListener('mouseout', function handleMouseOver() {
+baggrund_tekst.addEventListener('mouseout', function musOver() {
     
     baggrund_tekst.style.backgroundColor = farve2;
     baggrund_kasse.style.backgroundColor = farve2;
@@ -58,22 +58,22 @@ baggrund_tekst.addEventListener('mouseout', function handleMouseOver() {
 
 
 //knap 1 mouseover
-knap1.addEventListener('mouseover', function handleMouseOver() {
+knap1.addEventListener('mouseover', function musOver() {
     knap1.style.backgroundColor = farve1;
 });
 
 //knap 1 mouseout
-knap1.addEventListener('mouseout', function handleMouseOver() {
+knap1.addEventListener('mouseout', function musOver() {
     knap1.style.backgroundColor = farve2;
 });
 
 //knap 2 mouseover
-knap2.addEventListener('mouseover', function handleMouseOver() {
+knap2.addEventListener('mouseover', function musOver() {
     knap2.style.backgroundColor = farve1;
 });
 
 //knap 2 mouseout
-knap2.addEventListener('mouseout', function handleMouseOver() {
+knap2.addEventListener('mouseout', function musOver() {
     knap2.style.backgroundColor = farve2;
 });
 
@@ -84,7 +84,7 @@ knap2.addEventListener('mouseout', function handleMouseOver() {
 //click skift farve
 let adminClicked = false;
 
-knap1.addEventListener('click', function onClick(){
+knap1.addEventListener('click', function click(){
     if (adminClicked==false){
         knap1.style.backgroundColor = farve3;
         knap1.style.color = farve1;
@@ -96,7 +96,7 @@ knap1.addEventListener('click', function onClick(){
     }
 } );
 
-knap2.addEventListener('click', function onClick(){
+knap2.addEventListener('click', function click(){
     if (adminClicked==false){
         knap2.style.backgroundColor = farve3;
         knap2.style.color = farve1;
@@ -109,9 +109,9 @@ knap2.addEventListener('click', function onClick(){
 } );
 
 //resetter farverne
-knap1.addEventListener('mouseout', function handleMouseOver() {
+knap1.addEventListener('mouseout', function musOver() {
     knap1.style.color = farve3;
 });
-knap2.addEventListener('mouseout', function handleMouseOver() {
+knap2.addEventListener('mouseout', function musOver() {
     knap2.style.color = farve3;
 });
