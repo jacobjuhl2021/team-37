@@ -1,12 +1,12 @@
+//Javascript af Alex
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Frem og tilbage knapper
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
